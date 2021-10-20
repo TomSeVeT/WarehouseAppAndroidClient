@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="pl.sevet.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            android:usesCleartextTraffic="true">
+        <activity
+                android:name=".WarehouseHistory"
+                android:label="Warehouse History"
+                android:parentActivityName=".WarehouseMenu">
+        </activity>
+        <activity
+                android:name=".NewItemGroup"
+                android:label="New Item Group"
+                android:parentActivityName=".ItemGroupDictionary">
+        </activity>
+        <activity
+                android:name=".UserLocation"
+                android:label="User Location"
+                android:parentActivityName=".UserMainMenu">
+        </activity>
+        <activity
+                android:name=".UserMainMenu"
+                android:label="User Main Menu"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+                android:name=".LocationEmployeeAccess"
+                android:label="Location Employee Access"
+                android:parentActivityName=".LocationMenu">
+        </activity>
+        <activity
+                android:name=".NewLocation"
+                android:label="New Location"
+                android:parentActivityName=".LocationsDictionary">
+        </activity>
+        <activity
+                android:name=".LocationsInventory"
+                android:label="Locations Inventory"
+                android:parentActivityName=".LocationMenu">
+        </activity>
+        <activity
+                android:name=".LocationsDictionary"
+                android:label="Locations Dictionary"
+                android:parentActivityName=".LocationMenu">
+        </activity>
+        <activity
+                android:name=".LocationMenu"
+                android:label="Location Menu"
+                android:parentActivityName=".MainAdminMenu">
+        </activity>
+        <activity
+                android:name=".WarehouseInventory"
+                android:label="Warehouse Inventory"
+                android:parentActivityName=".WarehouseMenu">
+        </activity>
+        <activity
+                android:name=".Delivery"
+                android:label="Delivery"
+                android:parentActivityName=".WarehouseMenu">
+        </activity>
+        <activity
+                android:name=".NewItemType"
+                android:label="New Item Type"
+                android:parentActivityName=".ItemsDictionary">
+        </activity>
+        <activity
+                android:name=".ItemsDictionary"
+                android:label="Items Dictionary"
+                android:parentActivityName=".WarehouseMenu">
+        </activity>
+        <activity
+                android:name=".ItemGroupDictionary"
+                android:label="Items Groups Dictionary"
+                android:parentActivityName=".WarehouseMenu">
+        </activity>
+        <activity
+                android:name=".WarehouseMenu"
+                android:label="Warehouse Menu"
+                android:parentActivityName=".MainAdminMenu">
+        </activity>
+        <activity
+                android:name=".NewUser"
+                android:label="New User"
+                android:parentActivityName=".Users">
+        </activity>
+        <activity
+                android:name=".Users"
+                android:label="Użytkownicy"
+                android:parentActivityName=".MainAdminMenu">
+        </activity>
+        <activity
+                android:name=".MainAdminMenu"
+                android:label="Menu Admina"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+                android:name=".MainActivity"
+                android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
